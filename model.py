@@ -108,4 +108,5 @@ class AnatomicalAttentionMIL(nn.Module):
         # E. 分类
         logits = self.classifier(fused_feat)
 
+
         return logits, attn_weights, bag_feat, fused_feat
